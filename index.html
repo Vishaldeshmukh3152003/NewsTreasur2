@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Treasure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#">
+                <img src="./logo.png" alt="company logo" class="company-logo" onclick="reload()">
+            </a>
+         <div class="nav-link">
+            <ul class="flex">
+                <li class="hover-link nav-item " id="IPL" onclick="onNavItemClick('IPL')">IPL</li>
+                <li class="hover-link nav-item " id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                <li class="hover-link nav-item " id="sports"  onclick="onNavItemClick('sports')">sports</li>
+                <li class="hover-link nav-item " id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+            </ul>
+         </div>
+         <div class="search-bar">
+            <input type="text" class="news-input"placeholder="e.g. Science" id="search-text" >
+            <button class="search_button" id="search-button">Search</button>
+         </div>
+        </div>
+    </nav>
+
+
+
+ <main>
+   <div class="cards-container container flex" id="cards-container">
+    </div>
+ </main>
+
+ <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+               <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is a title</h3>
+                <h6 class="news-source" id="news-source">End</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Sed est suscipit
+                     consequatur ea numquam alias obcaecati saepe,
+                      vel, adipisci explicabo ad nihil quidem quaerat 
+                      in dignissimos ratione inventore labore deserunt?</p>
+            </div>
+        </div>
+
+    </template>
+
+    </div>
+    <script src="news.js"></script>
+</body>
+</html>
